@@ -53,9 +53,7 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/">主页</a></li>
-	        
-				<li><a href="/2020/09/24/firest/">文章</a></li>
+				<li><a href="/">文章</a></li>
 	        
 				<li><a href="/2020/09/24/introduce/">作品介绍</a></li>
 	        
@@ -117,8 +115,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -137,13 +133,11 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">文章</a></li>
 		        
-					<li style="width: 25%"><a href="/2020/09/24/firest/">文章</a></li>
+					<li style="width: 33.333333333333336%"><a href="/2020/09/24/introduce/">作品介绍</a></li>
 		        
-					<li style="width: 25%"><a href="/2020/09/24/introduce/">作品介绍</a></li>
-		        
-					<li style="width: 25%"><a href="/2020/09/24/about/">关于我</a></li>
+					<li style="width: 33.333333333333336%"><a href="/2020/09/24/about/">关于我</a></li>
 		        
 				</ul>
 			</nav>
@@ -255,68 +249,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/09/24/about/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-firest" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/24/firest/">firest</a>
-    </h1>
-  
-
-        
-        <a href="/2020/09/24/firest/" class="archive-article-date">
-  	<time datetime="2020-09-24T09:52:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/09/24/firest/">展开全文 >></a>
         </p>
       
 
@@ -529,6 +461,114 @@
 
 
   
+    <article id="post-Hexo+Github搭建个人博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/22/Hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">hexo+github搭建个人博客</a>
+    </h1>
+  
+
+        
+        <a href="/2020/09/22/Hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+  	<time datetime="2020-09-22T05:42:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="第一章-环境搭建"><a href="#第一章-环境搭建" class="headerlink" title="第一章 环境搭建"></a>第一章 环境搭建</h2><p>安装：node</p>
+<p>安装：hexo框架</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<h2 id="第二章-创建博客"><a href="#第二章-创建博客" class="headerlink" title="第二章 创建博客"></a>第二章 创建博客</h2><p>创建blog目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir blog</span><br></pre></td></tr></table></figure>
+
+<p>进入blog文件夹</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
+
+<p>初始化文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init //生成多个文件</span><br></pre></td></tr></table></figure>
+
+<p>启动本地博客服务</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s <span class="comment">##生成本地访问地址http://localhost:4000打开网址后能看到生成的默认网页</span></span><br></pre></td></tr></table></figure>
+
+<p>新建文章</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n <span class="string">&quot;文章名&quot;</span>//存储在<span class="built_in">source</span>/_post文件中</span><br></pre></td></tr></table></figure>
+
+<h2 id="第三章-部署到github中"><a href="#第三章-部署到github中" class="headerlink" title="第三章 部署到github中"></a>第三章 部署到github中</h2><p>Github创建一个新的仓库 YourGithubName.github.io</p>
+<p>在blog文件夹找到_config.yml并添加</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line"> 		<span class="built_in">type</span>: git</span><br><span class="line">		repo: https://github.com/YourGithubName/YourGithubName.github.io.git</span><br><span class="line"> 		branch: master</span><br></pre></td></tr></table></figure>
+
+<p>运行nexo命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo c	<span class="comment">#清理一下</span></span><br><span class="line">$ hexo g	<span class="comment">#生成</span></span><br><span class="line">$ hexo d	<span class="comment">#部署到远程Github仓库</span></span><br><span class="line"></span><br><span class="line">https://YourGithubName.github.io/  <span class="comment">#访问这个地址可以查看博客</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="第四章-更换主题"><a href="#第四章-更换主题" class="headerlink" title="第四章 更换主题"></a>第四章 更换主题</h2><p>将目标主题文件克隆到blog/themes/yilia 中</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br></pre></td></tr></table></figure>
+
+<p>修改_config.yml</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">themes: yilia</span><br></pre></td></tr></table></figure>
+
+<p>重新运行hexo命令行进行发布</p>
+<h2 id="第五章-常见问题"><a href="#第五章-常见问题" class="headerlink" title="第五章 常见问题"></a>第五章 常见问题</h2><h3 id="本地部署完毕后使用-hexo-d-推送到git仓库失败，报错内容"><a href="#本地部署完毕后使用-hexo-d-推送到git仓库失败，报错内容" class="headerlink" title="本地部署完毕后使用$ hexo d 推送到git仓库失败，报错内容"></a>本地部署完毕后使用$ hexo d 推送到git仓库失败，报错内容</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Error: Spawn failed</span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (C:\Users\dell\github.io\node_modules\hexo-util\lib\spawn.js:52:19)</span><br><span class="line">    at ChildProcess.emit (events.js:189:13)</span><br><span class="line">    at ChildProcess.cp.emit (C:\Users\dell\github.io\node_modules\hexo-util\lib\enoent.js:52:19)</span><br></pre></td></tr></table></figure>
+<p>解决方法</p>
+<p>方法一：</p>
+<p>在blog文件夹找到_config.yml,修改repo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> 		<span class="built_in">type</span>: git</span><br><span class="line">		repo: ssh://github.com/YourGithubName/YourGithubName.github.io.git</span><br><span class="line"> 		branch: master</span><br></pre></td></tr></table></figure>
+<p>方法二：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> 		<span class="built_in">type</span>: git</span><br><span class="line">		repo: @github.com/YourGithubName/YourGithubName.github.io.git</span><br><span class="line"> 		branch: master</span><br></pre></td></tr></table></figure>
+
+<p>方法三：</p>
+<p>查询git日志</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> //可以看到仓库的状态历史和</span><br></pre></td></tr></table></figure>
+<p>登录github查看提交记录在log中找到对应的commitId，回滚本地仓库的状态</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard  commitId</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/09/22/Hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
   
 
 
@@ -667,41 +707,13 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-friends" q-show="friends">
   		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
     	</section>
     
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">/2020/09/24/about/</div>
   	  	
     	</section>
     
